@@ -1,0 +1,20 @@
+.helpLayout nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.helpLayout nav a {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.helpLayout nav a:hover {
+    border-color: var(--primary);
+}
+
+.helpLayout nav a.active {
+    background-color: var(--primary);
+}

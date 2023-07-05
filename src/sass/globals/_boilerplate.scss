@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: var(--main);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    font-weight: bolder;
+}
+
+p {
+    margin: 20px auto;
+}
+
+a,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: var(--main);
+}
+
+button {
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}

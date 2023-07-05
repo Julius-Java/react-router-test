@@ -1,0 +1,26 @@
+.container {
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    max-width: 75rem;
+    margin-inline: auto;
+}
+
+header nav h1 {
+    margin-right: auto;
+    border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+header nav a.active {
+    background-color: var(--primary);
+}
