@@ -1,10 +1,12 @@
 import "../../sass/Contact.scss"
+import { Form, useActionData } from "react-router-dom"
 
 function Contact() {
+  const submitResponse = useActionData()
   return (
     <div className="contact">
         <h3>Contact Us</h3>
-        <form>
+        <Form method="post" action="/help/contact">
             <label htmlFor="">
                 <span>Your Email</span>
                 <input type="email" name="email" required/>
@@ -15,7 +17,8 @@ function Contact() {
                 <textarea name="message" required></textarea>
             </label>
             <button>Submit</button>
-        </form>
+            {(submitResponse && submitResponse.error) && (<p>{submitResponse.error}</p>)}
+        </Form>
     </div>
   )
 }
